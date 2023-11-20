@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcaaf8 ;
+}
+.container { 
+    height: 80vh;
+    width: 95vw;
+     display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "header header header"
+      "aside sectionA sectionA"
+      "aside sectionB sectionB"
+      "aside articleA articleB"
+      "footer footer footer";
+  } 
+header { 
+    grid-area: header; 
+    background-color: #fcd6f4;
+}
+.sectionA { 
+  grid-area: sectionA;
+  background-color: white;
+  text-align: center;
+}
+.sectionB {
+   grid-area: sectionB; 
+   background-color: #d58ef7;
+   text-align: center;
+  }
+
+.aside {
+   grid-area: aside;
+   background-color: #f3eec0;
+   text-align: center ;
+   background-image: url(../img/flowermorada.jpg);
+   }
+
+.articleA {
+   grid-area: articleA;
+   background-color:rgb(206, 123, 245) ;
+   text-align: center;
+   list-style-type: none;
+   margin: 10px;
+   }
+.acordeon{
+    background-color:rgb(206, 123, 245) ;
+    text-align: center;
+    margin: 3px;
+}
+.articleB { 
+  grid-area: articleB;
+  background-color:#f8f4bc ;
+  text-align: center;
+  list-style-type: none;
+  margin: 5px;
+}
+
+.footer {
+   grid-area: footer;
+   background-color: #ea70fa;
+   margin: 5px;
+   text-align: center;
+   }
+h1{
+    color: rgb(173, 3, 252);
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Elsie', serif;
+    background-color: #d886f8;
+    margin: 20px;
+}
+h2{
+    color: rgb(173, 3, 252);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Elsie', serif;
+    margin: 10px;
+
+ }
+h3{
+    color: rgb(161, 69, 247);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Elsie', serif;
+    background-color: #f8f4bc;
+    margin: 20px;
+ }
+nav{
+    padding: 10px;
+}
+.menu{ 
+    background-color: rgb(164, 122, 248);
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+.menu li{
+    display: list-item;
+}
+.menu li a{
+    padding: 10px;
+    margin: 20px;
+    color: rgb(245, 248, 84);
+    text-decoration: none;
+    display: list-item;
+}
+.menu li a:hover{
+color: rgb(130, 4, 248);
+background-color:rgb(245, 248, 84); 
+border-radius: 50px;
+}
+.menuDos{ 
+    background-color: rgb(164, 122, 248);
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+.menuDos li{
+    display: inline-block;
+}
+.menuDos li a{
+    padding: 10px;
+    margin: 20px;
+    color: rgb(245, 248, 84);
+    text-decoration: none;
+    display: inline-block;
+}
+.menuDos li a:hover{
+color: rgb(130, 4, 248);
+background-color:rgb(245, 248, 84); 
+border-radius: 50px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    opacity: 1;
+}
+img:hover{
+    opacity: 1;
+    border: rgb(244, 247, 89) 4px;
+}
+.logoPrincipal{
+    background-color:  #f5d7ef;
+    border: none;
+    width: 300px;
+    height: 250px;
+    opacity: 0.9;
+}
+.formulario{
+        color: rgb(103, 2, 197);
+        font-size: 20px;
+        font-weight: bold;
+        background-image: url(../img/flowermorada.jpg);
+        line-height: 2;
+        margin: 10px;
+        padding: 10px;
+        width: 500px;
+
+}
+section{
+    color: #7d08f3;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: 'Elsie', serif;
+    margin: 5px;
+}
+ul{
+    list-style-type: none;
+}
+ol{
+    list-style-type: square;
+}
+.fondolila{
+    background-image: url(../img/flowermorada.jpg);
+    background-repeat: space;
+}
